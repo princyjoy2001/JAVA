@@ -1,0 +1,23 @@
+package Rithick;
+import java.util.*;
+public class Nightclass {
+	static void div(int n)
+	{
+		int x;
+		x=n%10;
+		System.out.print(x);
+		n=n/10;
+		if(n>0) {
+			div(n);
+		}
+	}
+	public static void main(String args[]) {
+	
+	Scanner sc=new Scanner (System.in);
+	int n=sc.nextInt();
+	div(n);
+	
+	}
+	
+
+}
